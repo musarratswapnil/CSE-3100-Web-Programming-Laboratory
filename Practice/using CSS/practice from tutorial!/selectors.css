@@ -1,0 +1,54 @@
+*{
+    font-size: 22px;
+    border: 1px solid red;
+    /*but now its universal selector, so selected to all, not inheritance!  */
+}
+
+html{
+
+}
+
+body{
+    font-size: 22px;
+    /* body is the parent so this font-size is inherited by all */
+    border: 3px solid black;
+    /* it is not inherited by all other childs as the border is only in body */
+}
+
+main{
+
+}
+
+button,input,textarea,select{
+    font: inherit;
+}
+
+p{
+    color: purple !important;; 
+    /* this !important will override everything */
+}
+p{
+    color:red; 
+}
+
+p span{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/* should use class name instead of p span! */
+
+.highlight{
+    text-transform: uppercase;
+    background-color: blue;
+}
+
+/* should use class name instead of p span! */
+
+.gray{
+    color: gray;
+}
+
+#second{
+    font-style: italic;
+}

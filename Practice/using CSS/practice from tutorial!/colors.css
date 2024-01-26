@@ -1,0 +1,11 @@
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-length:1.5;
+    background-color: papayawhip;
+    color: darkblue;
+}
+
+p{
+    color: hsla(302, 57%, 45%, 0.718);
+}

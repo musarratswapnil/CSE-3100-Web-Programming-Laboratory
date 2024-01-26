@@ -1,0 +1,42 @@
+/* p{
+    font-size:32px ;
+} */
+
+header{
+    width: 50%;
+    /* it's taking 50% of the page */
+}
+
+h1{
+    border: 2px dashed red;
+    width: 50%;
+    /* here its 50% of the header */
+    font-size: 3rem;
+    padding: 1em;
+    /* padding is relative to font-size which is its parent */
+}
+
+/* from the previous two selectors we can say h1 is taking 50% of the header & header is taking 50% of the page */
+
+main{
+    font-size:2rem ;
+}
+
+p{
+    font-size: 2rem;
+    /* default browser size is 16px which is 1rem
+    rem is not relative to the parent, it is relative to the root
+    so here the font-size will be 32px
+    */
+
+}
+
+p{
+    font-size: 2rem;
+    /* 
+    em is not relative to the parent, it is relative to the root
+    so here the font-size will be 64px as the parent main is 2rem
+    */
+    width: 40ch;
+    /* this means a line will have 40ch */
+}
