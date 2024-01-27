@@ -2,9 +2,19 @@
     font-size:32px ;
 } */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     width: 50%;
     /* it's taking 50% of the page */
+}
+
+body{
+    width: 100vw;
 }
 
 h1{
@@ -19,6 +29,8 @@ h1{
 /* from the previous two selectors we can say h1 is taking 50% of the header & header is taking 50% of the page */
 
 main{
+    width: 50vw;
+    background-color: skyblue;
     font-size:2rem ;
 }
 
