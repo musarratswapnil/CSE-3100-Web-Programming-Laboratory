@@ -55,3 +55,14 @@ window.onscroll = () =>{
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight); 
 }
+
+
+//  ================typed js===========
+
+const typed= new Typed('.multiple-text',{
+    strings: ['Student', 'Web Developer'],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:200,
+    loop:true
+});
