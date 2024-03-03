@@ -3,26 +3,26 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
+menuIcon.onclick = () =>{
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
 
 
 //scroll Selections
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+let sections= document.querySelectorAll('section');
+let navLinks=document.querySelectorAll('header nav a');
 
 
 
-window.onscroll = () => {
+window.onscroll = () =>{
     sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 100;
+        let top= window.scrollY;
+        let offset= sec.offsetTop - 100;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if (top >= offset && top < offset + height) {
+        if(top >= offset && top < offset + height){
             //active navbar links
             navLinks.forEach(links => {
                 links.classList.remove('active');
@@ -35,14 +35,14 @@ window.onscroll = () => {
         }
 
         // if want to use animation that repeats on scroll use this
-        else {
+        else{
             sec.classList.remove('show-animate');
         }
 
     });
 
     //sticky header
-    let header = document.querySelector('header');
+    let header=document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
     // remove toggle icon and navbar when click navbar links(srroll)
@@ -53,16 +53,16 @@ window.onscroll = () => {
     // animation footer on scroll
     let footer=document.querySelector('footer');
 
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight); 
 }
 
 
 //  ================typed js===========
 
-const typed = new Typed('.multiple-text', {
+const typed= new Typed('.multiple-text',{
     strings: ['Student', 'Web Developer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 200,
-    loop: true
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:200,
+    loop:true
 });
